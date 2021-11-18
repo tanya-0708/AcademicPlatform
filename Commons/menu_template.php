@@ -93,6 +93,16 @@ $row = fetchCourseInfo($conn,$_SESSION["Course_ID"]);
                 <span class="mx-2">Resources</span>
               </a>
             </li>
+            <li class="nav-link">
+              <?php if($_SESSION["type"]==="F")
+  						echo '<a href="../Attendance/teacher_view_submission.php">';
+  						  else
+  								echo '<a href="../Attendance/student_view_submission.php">';
+                ?>
+                <i class='bx bxs-book-alt'></i>
+                <span class="mx-2">Attendance</span>
+              </a>
+            </li>
         </ul>
 
         <span href="#" class="nav-link h4 w-100 mb-5">
