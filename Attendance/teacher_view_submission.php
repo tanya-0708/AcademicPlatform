@@ -1,6 +1,6 @@
 <?php require_once '../Commons/menu_template.php';
       require_once 'includes/functions.inc.php';
-      require_once 'includes/fetchSubmissions.inc.php';
+      require_once 'includes/fetchAttendanceinfo.inc.php';
       $date = date("Y/m/d");
       
 ?>

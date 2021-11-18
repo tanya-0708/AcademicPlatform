@@ -1,6 +1,6 @@
 <?php require_once '../Commons/menu_template.php';
 require_once 'includes/functions.inc.php';
-require_once 'includes/fetchSubmissions.inc.php';
+require_once 'includes/fetchAttendanceinfo.inc.php';
 
 // echo  $_GET['Ass_ID'];
 ////$rows = getAssignmentDetails($conn, $_SESSION['Ass_ID']);
