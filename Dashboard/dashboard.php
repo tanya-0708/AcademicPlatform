@@ -64,6 +64,18 @@ require_once 'essentials/header.php';
 					<?php }  ?>
 					<?php mysqli_stmt_close($stmt); ?>
 				<?php } ?>
+				<div class="col-lg-4 col-md-6 col-sm-12">
+							<div class="blue-green">
+
+								<h3><a href="lab.php">
+											Virtual Labs
+
+									</a>
+								</h3>
+										<p> Your personlized IDE at your hand
+										</p>
+							</div>
+				</div>
 			</div>
 		</div>
 	</div>
