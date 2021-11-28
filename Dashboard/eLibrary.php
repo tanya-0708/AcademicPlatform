@@ -76,7 +76,7 @@ require_once 'includes/functions.inc.php';
         <div class="d-flex justify-content-center">
             <form class="text-center" action="fetchBook.php" method="POST">
                 <div class="input-group bx-sdw">
-                    <input type="text" placeholder = "Search book name/author" name="searchBook">
+                    <input type="text" placeholder = "Search keyword for book/author" name="searchBook" style="width:500px;">
                     <span class="input-group-append">
                         <button type="submit" class="btn btn-primary" name="submit">
                             <i class="fa fa-search">
@@ -87,6 +87,7 @@ require_once 'includes/functions.inc.php';
                 </div>
             </form>
         </div>
+        <?php require_once 'book.php'; ?>
         <?php while ($rows = mysqli_fetch_assoc($resultData)) { 
 					?>
         <div class="row m-b-30">
@@ -103,7 +104,7 @@ require_once 'includes/functions.inc.php';
                         </div>
                         <div class="col-md-10">
                             <h4 class="sub-til">
-                                <a class itemprop="name" href="http://gravitation.web.ua.pt/msampaio/CourseNotes.pdf">
+                                <a class itemprop="name" href="<?php echo $rows["link"]; ?>">
                                     <?php echo $rows["book_title"]?>
                                 </a>
 
@@ -122,6 +123,7 @@ require_once 'includes/functions.inc.php';
                                         <span class="page-tab" itemprop="noOfPages"><?php echo $rows["pages"]?></span>
                                         <b class="page-tab_1">Pages</b>
                                     </p>
+
                                 </div>
                                
                             </div>

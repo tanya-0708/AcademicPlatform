@@ -17,7 +17,7 @@ if ($_SESSION["type"] === "F") {
 if (count($_FILES) > 0) {
 
   $pimage = $_FILES["userImage"]["name"];
-  move_uploaded_file($_FILES["userImage"]["tmp_name"], "../../PP_image/" . $_FILES["userImage"]["name"]);
+  move_uploaded_file($_FILES["userImage"]["tmp_name"], "PP_image/" . $_FILES["userImage"]["name"]);
 
   if ($_SESSION["type"] == "S")
     $sql = "UPDATE student_info set S_pp = ? where S_ID = ?";
@@ -35,11 +35,11 @@ if (count($_FILES) > 0) {
   // echo $_SESSION['Class_ID'];
   $result = mysqli_stmt_execute($stmt);
   // echo $result;
-  // if ($result!==false)
-  // {
-  //   echo "yo";
-  //   $set = "imageSet";
-  // }
+  if ($result!==false)
+  {
+    //echo "yo";
+    $set = "imageSet";
+  }
 
 
 
@@ -65,7 +65,9 @@ if (count($_FILES) > 0) {
       <div class="col-md-2">
         <div class="pp">
           <?php $rows = fetchStudentPic($conn, $_SESSION["id"]);
-          echo '<img src="../../PP_image/' . htmlentities($rows) . '" width="160" height = "160" />';
+          $s = $rows;
+          //echo $rows;
+          echo '<img src="'.$s.'" alt="HTML5 Icon" style="width:160px;height:160px">';
           ?>
         </div>
 
@@ -170,8 +172,8 @@ if (count($_FILES) > 0) {
                               <input type="submit" value="Submit" class="btnSubmit" />
                             </form>
                             <?php if (isset($_GET["update"])) {
-                              if ($set === "imageSet")
-                                echo "<p class='error'>Photo has been updated successfully</p>";
+                              //if ($set === "imageSet")
+                                //echo "<p class='error'>Photo has been updated successfully</p>";
                               // unset($_GET["update"]);
                             } ?>
                           </div>

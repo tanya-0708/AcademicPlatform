@@ -1,12 +1,14 @@
-<?php
+<?php session_start();
     if(isset($_POST['submit']))
     {
-        session_start();
-        require_once 'dbh.inc.php';
-        require_once 'functions.inc.php';
-        $searchBook = $_POST["searchBook"];
-        $resultData = getBooks($conn,$searchBook);
+        
+        
+        $_SESSION["bookKeyword"] = $_POST["searchBook"];
+
+        echo  $_SESSION["bookKeyword"];
+        header("location: eLibrary.php");
     }
     else{
 
     }   
+?>
