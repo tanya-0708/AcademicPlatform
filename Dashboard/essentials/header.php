@@ -50,10 +50,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link " href="#"> To-do List </a>
-                                
-                            </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link " href="EditProfile.php"> Edit Profile </a>
                             </li>
