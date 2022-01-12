@@ -22,11 +22,8 @@ Facilities like editing the profile, virtual labs where students can code in Pyt
 These are the screenshots of our work -
 
 <!-- <p> -->
-  Login Page
   <img src='screenshots/login.jpeg' width = '70%'>
-  Dashboard
   <img src= 'screenshots/dashboard.jpeg' width = '70%' >
-  Edit Profile
   <img src ='screenshots/edit_profile.jpeg' width = '70%'>
 <!-- </p> -->
 
