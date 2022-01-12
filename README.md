@@ -3,7 +3,7 @@
 </div>
 
 
-## Welcome to BV CLASSROOM!
+## Welcome to Academic Platform!
 Our project is an Academic Portal which will help the universities and the schools to conduct online education efficiently. It will help teachers and students have their courses, and the required material at one place.
 We will  give the facility to teachers to add the announcements, assignments, grades and resources of respective courses and students with the facility to access the same. Students can also submit their answer sheets on the portal. Furthermore, a to-do list feature is provided for the students to help keep a check on their due assignments.
 It also provides the feature of marking the attendance of students per lecture to the teachers, calendar to add, delete and update the events going on month, week and day wise. 
@@ -37,6 +37,13 @@ These are the screenshots of our work -
   <img src='screenshots/assignment.jpeg' width = '70%'>
   <img src= 'screenshots/attendance.jpeg' width = '70%' >
   <img src ='screenshots/resources.jpeg' width = '70%'>
+<!-- </p> -->
+
+<!-- <p> -->
+  <img src='screenshots/calendar.jpeg' width = '70%'>
+  <img src= 'screenshots/e_library.jpeg' width = '70%' >
+  <img src ='screenshots/virtual_lab.jpeg' width = '70%'>
+  <img src ='screenshots/python_lab.jpeg' width = '70%'>
 <!-- </p> -->
 
 
